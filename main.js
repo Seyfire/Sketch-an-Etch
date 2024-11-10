@@ -1,13 +1,22 @@
 
 function createGrid(gridWidth) {
     // creates a number of cells within the canvas container
-    const gridCells = gridWidth ** 2;
-    for ( let i = 0; i < gridCells; i++) {
-        const cell = document.createElement("div");
-        canvas.appendChild(cell);
-        // set styles for each cell
-        cell.classList.add("cell");
+
+    // create columns  
+    for ( let i = 0; i < gridWidth; i++) {
+        column = document.createElement("div");
+        canvas.appendChild(column);        
+        column.classList.add("column");
+    
+        // create divs inside columns 
+        for ( let i = 0; i < gridWidth; i++) {
+            cell = document.createElement("div");
+            column.appendChild(cell);
+            cell.classList.add("cell");
+        }
     }
+
+
 }
 
 let gridWidth = 16;

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.canvas {
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex: 1;    
+    flex-direction: column;
+}
+
+.cell {
+    border: 1px solid #9e9e9e;
+    flex: 1;
+}

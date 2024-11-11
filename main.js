@@ -11,12 +11,20 @@ function createGrid(gridWidth) {
         // create divs inside columns 
         for ( let i = 0; i < gridWidth; i++) {
             cell = document.createElement("div");
+            // add event listener for hovering over cell
+            cell.addEventListener("mouseover", function (e) {
+                colorCell(e.target);
+            });
             column.appendChild(cell);
             cell.classList.add("cell");
         }
     }
+}
 
+function colorCell(cell) {
+    // fills the cell with beautiful color!
 
+    cell.style["background-color"] = "black";
 }
 
 let gridWidth = 16;

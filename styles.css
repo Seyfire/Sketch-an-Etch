@@ -3,6 +3,19 @@
     padding: 0;
 }
 
+/* START hacky stuff to center everything on page for now */
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+button {
+    margin-top: 40px;
+}
+/* END hacky stuff */
+
 .canvas {
     border: 1px solid black;
     width: 600px;
